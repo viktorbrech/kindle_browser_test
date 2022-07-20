@@ -6,14 +6,15 @@
     <script>
         let counter = 0
         const elem = document.getElementById('kindle_counter');
-        elem.innerHTML=counter;
+        elem.innerHTML=counter.toString();
         setInterval(function () {
             counter += 1;
-            elem.innerHTML += counter
-        }, 1000);
+            elem.innerHTML = counter.toString();
+            console.log("counter equals " + counter);
+        }, 5000);
     </script>
   </head>
   <body>
-    <h3 id="kindle_counter">lol</h3>
+    <h3 id="kindle_counter">not_initialized</h3>
   </body>
 </html>
