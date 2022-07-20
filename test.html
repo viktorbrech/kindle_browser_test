@@ -4,17 +4,14 @@
     <meta charset="utf-8">
     <title>kindle_test</title>
     <script>
-        let counter = 0
-        let elem = document.getElementById('kindle_counter');
-        elem.innerHTML=counter.toString();
         setInterval(function () {
-            counter += 1;
-            elem.innerHTML = counter.toString();
-            console.log("counter equals " + counter);
+          let elem = document.getElementById('kindle_counter');
+          elem.innerHTML +="z";
+          console.log("count!");
         }, 5000);
     </script>
   </head>
   <body>
-    <h3 id="kindle_counter">not_initialized_yet</h3>
+    <h3 id="kindle_counter">...</h3>
   </body>
 </html>
