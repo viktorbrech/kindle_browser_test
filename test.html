@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>kindle_test</title>
+    <script>
+        let counter = 0
+        const elem = document.getElementById('kindle_counter');
+        elem.innerHTML=counter;
+        setInterval(function () {
+            counter += 1;
+            elem.innerHTML += counter
+        }, 1000);
+    </script>
+  </head>
+  <body>
+    <h3 id="kindle_counter">lol</h3>
+  </body>
+</html>
