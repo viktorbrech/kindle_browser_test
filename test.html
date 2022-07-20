@@ -5,7 +5,7 @@
     <title>kindle_test</title>
     <script>
         let counter = 0
-        const elem = document.getElementById('kindle_counter');
+        let elem = document.getElementById('kindle_counter');
         elem.innerHTML=counter.toString();
         setInterval(function () {
             counter += 1;
@@ -15,6 +15,6 @@
     </script>
   </head>
   <body>
-    <h3 id="kindle_counter">not_initialized</h3>
+    <h3 id="kindle_counter">not_initialized_yet</h3>
   </body>
 </html>
